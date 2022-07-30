@@ -1,0 +1,4 @@
+# Project exclude paths
+/mq-common/target/
+/mq-integral/target/
+/mq-order/target/

@@ -1,0 +1,26 @@
+#配置端口号
+server:
+  port: 8081
+
+#配置数据源
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mq?serverTimezone=Asia/Shanghai&characterEncoding=UTF8
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  #配置消息队列
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 47.100.241.89
+    port: 5672
+
+
+#配置mybatis-plus
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
